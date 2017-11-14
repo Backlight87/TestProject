@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.shaopeng.testproject.widget.CustomTopBarView
+        android:id="@+id/custom_top_bar_widget_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:LeftText="左边"
+        app:RightText="右边"
+        app:Title="中间"></com.example.shaopeng.testproject.widget.CustomTopBarView>
+</RelativeLayout>

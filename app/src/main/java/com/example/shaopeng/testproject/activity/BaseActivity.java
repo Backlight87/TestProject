@@ -10,11 +10,16 @@ import com.example.shaopeng.testproject.R;
 /**
  * Created by Administrator on 2017/11/13.
  */
-public class BaseActivity  extends FragmentActivity{
+public class BaseActivity extends FragmentActivity {
+    /**
+     * 用add可能会出现fragment层叠。如果非要add参考书签
+     *
+     * @param fragment
+     */
     public void showFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.add(R.id.contain_fragment, fragment);
+        transaction.replace(R.id.contain_fragment, fragment);
         transaction.commit();
     }
 }

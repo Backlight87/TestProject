@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name">TestProject</string>
     <string name="custom_view_main_activity_text">自定义view相关</string>
-    <string name="material_design_main_activity_text">material design设计相关</string>
     <string name="shine_text_view_text">I am shine text</string>
     <string name="shine_text_widget">文字闪动</string>
-    <string name="share_login_pay_text_widget">社会SNS</string>
+    <string name="custom_topbar_widget">自定义TopBar</string>
 
+    <string name="material_design_main_activity_text">material design设计相关</string>
+
+    <string name="share_login_pay_text_widget">社会SNS</string>
     <string name="we_chat_login">微信登陆</string>
     <string name="we_chat_share">微信分享</string>
 </resources>

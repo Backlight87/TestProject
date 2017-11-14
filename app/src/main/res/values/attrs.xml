@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--name后面的CustomTopBarView声明这些自定义属性是为了CustomTopBarView服务的-->
+    <declare-styleable name="CustomTopBarView">
+        <attr name="LeftText" format="string" />
+        <attr name="RightText" format="string" />
+        <attr name="Title" format="string" />
+    </declare-styleable>
+
+</resources>
