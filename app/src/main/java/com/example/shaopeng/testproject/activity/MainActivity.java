@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.custom_view_main_activity).setOnClickListener(this);
         findViewById(R.id.material_design_main_activity).setOnClickListener(this);
+        findViewById(R.id.share_login_pay_main_activity).setOnClickListener(this);
     }
 
     @Override
@@ -25,6 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.material_design_main_activity:
                 startActivity(MaterialDesignActivity.class);
+                break;
+            case R.id.share_login_pay_main_activity:
+                startActivity(SnsDemoActivity.class);
                 break;
         }
     }

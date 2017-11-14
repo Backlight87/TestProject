@@ -11,6 +11,8 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 
 /**
+ * 闪烁文字效果：
+ * 基本原理：利用渲染器LinearGradient绘制（两边一个颜色，中间白色会给人一种闪光的感觉），然后在绘制的时候不断平移LinearGradient，是的中间白色部分不断平移
  * Created by Administrator on 2017/11/9.
  */
 public class ShineTextView extends android.support.v7.widget.AppCompatTextView {
@@ -34,9 +36,12 @@ public class ShineTextView extends android.support.v7.widget.AppCompatTextView {
 
 
     /**
-     * 在这里一般是为了获取view的宽高，因为会先执行测量在执行size change
-     * 执行顺序，先measure（不确定次数）——onsizechange——onlayout——ondraw
+     * 在这里一般是为了获取view的宽高，因为会先执行测量再执行size change
+     * 执行顺序，先measure（不确定次数）——onsize change——on layout——on draw
      * 关于渲染器的知识点：
+     * mLinearGradient是shade的一个子类，设置给画笔片头，带来各种渲染效果
+     * LinearGradient（起点X，起点有，终点想，终点有，渲染颜色集合，颜色所占比例（null就是平分），渲染模式）
+     * 渲染模式（三种）：假定颜色集合：红蓝白，渲染起点到终点是图形的中间，CLAMP边缘拉伸就是拉伸紅和白填充满整个图形，还有一种镜像，就是红蓝白，白蓝红，红蓝白填充满，还有一种就是红蓝白红蓝白红蓝白填充。
      */
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {

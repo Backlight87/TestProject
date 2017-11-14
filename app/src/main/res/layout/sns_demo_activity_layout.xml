@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
         android:layout_weight="1">
         <Button
-            android:id="@+id/shine_text_widget"
+            android:id="@+id/we_chat_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shine_text_widget" />
+            android:text="@string/we_chat_login" />
+        <Button
+            android:id="@+id/we_chat_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/we_chat_share" />
     </LinearLayout>
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="4dp"
-       android:background="@color/colorAccent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorAccent"/>
 
-    <!--android:layout_gravity="center"通过设置layout_gravity来达到fragment在左在右还是居中-->
     <FrameLayout
         android:id="@+id/contain_fragment"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_gravity="center"
         android:layout_weight="1"></FrameLayout>
 </LinearLayout>

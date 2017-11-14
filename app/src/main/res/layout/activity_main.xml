@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.shaopeng.testproject.activity.MainActivity">
+
     <Button
         android:id="@+id/custom_view_main_activity"
         android:layout_width="wrap_content"
@@ -16,5 +17,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/material_design_main_activity_text" />
+
+    <Button
+        android:id="@+id/share_login_pay_main_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_login_pay_text_widget" />
 </LinearLayout>
 
