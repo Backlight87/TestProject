@@ -10,4 +10,9 @@
     <string name="share_login_pay_text_widget">社会SNS</string>
     <string name="we_chat_login">微信登陆</string>
     <string name="we_chat_share">微信分享</string>
+
+    <string name="tts_main_activity">文字转语音</string>
+    <string name="xunfei_tts_local">讯飞离线TTS</string>
+    <string name="xunfei_tts_online">讯飞在线TTS</string>
+    <string name="android_tts">Android自带TTS</string>
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/xunfei_tts_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xunfei_tts_local" />
+
+    <Button
+        android:layout_toRightOf="@+id/xunfei_tts_local"
+        android:id="@+id/xunfei_tts_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xunfei_tts_online" />
+
+    <Button
+        android:layout_toRightOf="@+id/xunfei_tts_online"
+        android:id="@+id/android_tts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/android_tts" />
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您收到一笔12.25元的转账" />
+</RelativeLayout>
