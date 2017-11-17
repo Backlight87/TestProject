@@ -15,4 +15,8 @@
     <string name="xunfei_tts_local">讯飞离线TTS</string>
     <string name="xunfei_tts_online">讯飞在线TTS</string>
     <string name="android_tts">Android自带TTS</string>
+
+    <string name="media_text_main_activity">音频视频相关</string>
+    <string name="play_music_text">播放音频</string>
+    <string name="play_movie_text">播放视频</string>
 </resources>

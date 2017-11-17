@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.material_design_main_activity).setOnClickListener(this);
         findViewById(R.id.share_login_pay_main_activity).setOnClickListener(this);
         findViewById(R.id.tts_main_activity).setOnClickListener(this);
+        findViewById(R.id.media_text_main_activity).setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tts_main_activity:
                 startActivity(TTSTextActivity.class);
+                break;
+            case R.id.media_text_main_activity:
+                startActivity(TextMedia.class);
                 break;
         }
     }

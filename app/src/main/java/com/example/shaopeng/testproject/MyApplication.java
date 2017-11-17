@@ -22,6 +22,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mApplication = this;
+        // 在这里注册讯飞语音合成实例
         SpeechUtility.createUtility(getApplication(), SpeechConstant.APPID +"=5a0c0c99");
     }
 
