@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.example.shaopeng.testproject.R;
 import com.example.shaopeng.testproject.fragment.CustomTopBarFragment;
+import com.example.shaopeng.testproject.fragment.CustomViewBeginnerFragment;
 import com.example.shaopeng.testproject.fragment.ShineTextFragment;
 
 /**
@@ -18,6 +19,7 @@ public class CustomViewActivity extends BaseActivity implements View.OnClickList
         setContentView(R.layout.custom_view_layout);
         findViewById(R.id.shine_text_widget).setOnClickListener(this);
         findViewById(R.id.custom_top_bar_widget).setOnClickListener(this);
+        findViewById(R.id.custom_view_beginner).setOnClickListener(this);
     }
 
     @Override
@@ -29,6 +31,10 @@ public class CustomViewActivity extends BaseActivity implements View.OnClickList
             case R.id.custom_top_bar_widget:
                 showFragment(CustomTopBarFragment.getInstance());
                 break;
+            case R.id.custom_view_beginner:
+                showFragment(CustomViewBeginnerFragment.getInstance());
+                break;
+
         }
     }
 }

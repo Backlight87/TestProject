@@ -19,4 +19,5 @@
     <string name="media_text_main_activity">音频视频相关</string>
     <string name="play_music_text">播放音频</string>
     <string name="play_movie_text">播放视频</string>
+    <string name="custom_view_beginner_text">初阶的自定义view控件</string>
 </resources>

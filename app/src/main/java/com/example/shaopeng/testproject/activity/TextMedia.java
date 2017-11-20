@@ -85,6 +85,4 @@ public class TextMedia extends Activity implements OnClickListener {
     private void playMovie() {
 
     }
-
-
 }
