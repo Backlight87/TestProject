@@ -8,9 +8,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
-
-import com.example.shaopeng.testproject.Model.RingsViewModel;
 import com.example.shaopeng.testproject.Model.RingsViewWithNumberModel;
 import com.example.shaopeng.testproject.R;
 import com.example.shaopeng.testproject.widget.RingsView;
@@ -32,7 +29,7 @@ public class CustomViewBeginnerFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        List<RingsViewWithNumberModel> ringsViewModels = new ArrayList<>();
+       /* List<RingsViewWithNumberModel> ringsViewModels = new ArrayList<>();
         RingsViewWithNumberModel ringsViewModel2 = new RingsViewWithNumberModel("巨胖", 20, Color.BLUE);
         RingsViewWithNumberModel ringsViewModel3 = new RingsViewWithNumberModel("大胖", 29, Color.YELLOW);
         RingsViewWithNumberModel ringsViewModel4 = new RingsViewWithNumberModel("小胖", 40, Color.RED);
@@ -41,6 +38,9 @@ public class CustomViewBeginnerFragment extends Fragment {
         ringsViewModels.add(ringsViewModel4);
         RingsView ringsView = view.findViewById(R.id.ring);
         ringsView.setdata(ringsViewModels, 200);
+        ringsView.setVisibility(View.GONE);*/
+        /*RelativeLayout relativeLayout= view.findViewById(R.id.view_group);
+        relativeLayout.addView(new MusicRectView(getActivity()));*/
     }
 
     public static CustomViewBeginnerFragment getInstance() {
