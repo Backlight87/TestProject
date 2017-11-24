@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Scroller;
 
+//等学完scoller再回来
 public class MyScrollView extends ViewGroup {
 
     private int mScreenHeight;
@@ -80,9 +81,9 @@ public class MyScrollView extends ViewGroup {
                 mStart = getScrollY();
                 break;
             case MotionEvent.ACTION_MOVE:
-                /*if (!mScroller.isFinished()) {
+                if (!mScroller.isFinished()) {
                     mScroller.abortAnimation();
-                }*/
+                }
                 int dy = mLastY - y;
                 if (getScrollY() < 0) {
                     dy = 0;
@@ -97,24 +98,24 @@ public class MyScrollView extends ViewGroup {
                 int dScrollY = checkAlignment();
                 if (dScrollY > 0) {
                     if (dScrollY < mScreenHeight / 3) {
-                        int c=getScrollY();
+                        int c = getScrollY();
                         mScroller.startScroll(
                                 0, getScrollY(),
                                 0, -dScrollY);
                     } else {
-                        int c=getScrollY();
+                        int c = getScrollY();
                         mScroller.startScroll(
                                 0, getScrollY(),
                                 0, mScreenHeight - dScrollY);
                     }
                 } else {
-                    int c=getScrollY();
+                    int c = getScrollY();
                     if (-dScrollY < mScreenHeight / 3) {
                         mScroller.startScroll(
                                 0, getScrollY(),
                                 0, -dScrollY);
                     } else {
-                        int c1=getScrollY();
+                        int c1 = getScrollY();
                         mScroller.startScroll(
                                 0, getScrollY(),
                                 0, -mScreenHeight - dScrollY);

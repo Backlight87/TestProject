@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
+import com.example.shaopeng.testproject.Model.RingsViewModel;
 import com.example.shaopeng.testproject.R;
 import com.example.shaopeng.testproject.fragment.CustomTopBarFragment;
 import com.example.shaopeng.testproject.fragment.CustomViewBeginnerFragment;

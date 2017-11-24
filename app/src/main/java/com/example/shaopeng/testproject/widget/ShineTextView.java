@@ -25,7 +25,6 @@ public class ShineTextView extends android.support.v7.widget.AppCompatTextView {
     public ShineTextView(Context context) {
         super(context);
     }
-
     public ShineTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }

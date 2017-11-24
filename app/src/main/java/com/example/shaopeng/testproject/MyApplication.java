@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
+import com.tencent.bugly.crashreport.CrashReport;
 
 /**
  * 自定义application记得在manifest里面声明
@@ -24,6 +25,7 @@ public class MyApplication extends Application {
         mApplication = this;
         // 在这里注册讯飞语音合成实例
         SpeechUtility.createUtility(getApplication(), SpeechConstant.APPID +"=5a0c0c99");
+        CrashReport.initCrashReport(getApplicationContext(), "29a8a5d4bd", true);
     }
 
 }
