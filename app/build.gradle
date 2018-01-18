@@ -1,6 +1,19 @@
+
+
 apply plugin: 'com.android.application'
 
+
+
 android {
+
+    signingConfigs {
+        Baseconfig {
+            keyAlias '123456'
+            keyPassword '123456'
+            storeFile file('E:/apk/testproject.jks')
+            storePassword '123456'
+        }
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.shaopeng.testproject"
@@ -14,6 +27,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Baseconfig
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Baseconfig
         }
     }
     sourceSets {
@@ -24,7 +43,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
@@ -37,6 +56,8 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:design:26.1.0'
     dependencies {
-        compile 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+        compile 'com.tencent.bugly:crashreport:latest.release'
+        //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
     }
+
 }

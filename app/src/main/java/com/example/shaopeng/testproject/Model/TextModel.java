@@ -6,7 +6,6 @@ import java.util.List;
  * Created by Administrator on 2017/11/24.
  */
 public class TextModel {
-
     /**
      * result_code : 1000
      * result_msg :
